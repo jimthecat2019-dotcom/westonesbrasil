@@ -1,45 +1,24 @@
-WE STONES PEDRARIAS — NOVA VERSÃO
+WE STONES PEDRARIAS — PACOTE COM NOVAS IMAGENS
 
-Direção visual:
-- elegante e leve
-- mais clara
-- sem grandes áreas pretas
-- sem títulos exageradamente enormes
-- layout editorial com mosaico de imagens
-- aparência de atelier / catálogo de design
-
-Arquivos:
+Arquivos principais:
 - index.html
 - style.css
 - logo-westones.png
 
-Imagens que você deve adicionar na mesma pasta:
+Novas imagens:
+- cristais-champagne-fundo-preto.webp
+- pedrarias-bicolores-gotas.webp
+- cristais-geometricos-com-strass.webp
+- cristais-roxos-geometricos.webp
+- cristais-azuis-natureza.webp
+- cristais-furta-cor-mix.webp
+- mix-pedrarias-coloridas.webp
+- cristais-coracao-swarovski.webp
 
-HERO
-- hero-1.jpg
-- hero-2.jpg
-- hero-3.jpg
+As imagens foram convertidas para WebP em alta qualidade para deixar o site mais leve.
+O index.html e o style.css já apontam para esses nomes.
 
-COLEÇÕES
-- colecao-gotas.jpg
-- colecao-chatons.jpg
-- colecao-strass.jpg
-- colecao-navetes.jpg
-- colecao-cristais.jpg
-
-PRODUTOS
-- produto-1.jpg
-- produto-2.jpg
-- produto-3.jpg
-- produto-4.jpg
-
-SOBRE
-- sobre-westones.jpg
-
-INSTAGRAM
-- instagram-1.jpg
-- instagram-2.jpg
-- instagram-3.jpg
-
-Instagram já configurado:
-https://www.instagram.com/westonespedrarias/
+Para atualizar no GitHub:
+1. Envie todos os arquivos deste pacote para a mesma pasta do site.
+2. Substitua o index.html e o style.css atuais.
+3. Mantenha os nomes exatamente como estão.

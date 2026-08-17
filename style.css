@@ -800,3 +800,38 @@ figure {
     display: none;
   }
 }
+
+
+/* =========================================
+   NOVAS FOTOGRAFIAS — WE STONES
+   Ajustes para os arquivos .webp do pacote
+========================================= */
+
+.hero-mosaico img,
+.colecao-foto img,
+.produto-foto img,
+.sobre-imagem img,
+.instagram-grid img {
+  object-position: center;
+}
+
+/* Foto com maior variedade de formatos */
+.foto-a img {
+  object-position: 50% 52%;
+}
+
+/* Mantém a composição dos cristais champagne */
+.foto-b img {
+  object-position: center;
+}
+
+/* Mantém as pedras roxas centralizadas */
+.foto-c img {
+  object-position: center;
+}
+
+@media (max-width: 720px) {
+  .foto-a img {
+    object-position: 50% 50%;
+  }
+}
