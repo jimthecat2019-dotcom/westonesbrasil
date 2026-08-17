@@ -1,20 +1,45 @@
-WE STONES PEDRARIAS — SITE
+WE STONES PEDRARIAS — NOVA VERSÃO
 
-Arquivos incluídos:
+Direção visual:
+- elegante e leve
+- mais clara
+- sem grandes áreas pretas
+- sem títulos exageradamente enormes
+- layout editorial com mosaico de imagens
+- aparência de atelier / catálogo de design
+
+Arquivos:
 - index.html
 - style.css
 - logo-westones.png
 
-Para completar as fotos do layout, adicione na mesma pasta:
-- hero-westones.jpg
-- produto-gota.jpg
-- produto-navete.jpg
-- produto-strass.jpg
-- editorial-westones.jpg
+Imagens que você deve adicionar na mesma pasta:
+
+HERO
+- hero-1.jpg
+- hero-2.jpg
+- hero-3.jpg
+
+COLEÇÕES
+- colecao-gotas.jpg
+- colecao-chatons.jpg
+- colecao-strass.jpg
+- colecao-navetes.jpg
+- colecao-cristais.jpg
+
+PRODUTOS
+- produto-1.jpg
+- produto-2.jpg
+- produto-3.jpg
+- produto-4.jpg
+
+SOBRE
+- sobre-westones.jpg
+
+INSTAGRAM
 - instagram-1.jpg
 - instagram-2.jpg
 - instagram-3.jpg
-- instagram-4.jpg
 
-Instagram configurado:
+Instagram já configurado:
 https://www.instagram.com/westonespedrarias/
