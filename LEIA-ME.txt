@@ -1,0 +1,20 @@
+WE STONES PEDRARIAS — SITE
+
+Arquivos incluídos:
+- index.html
+- style.css
+- logo-westones.png
+
+Para completar as fotos do layout, adicione na mesma pasta:
+- hero-westones.jpg
+- produto-gota.jpg
+- produto-navete.jpg
+- produto-strass.jpg
+- editorial-westones.jpg
+- instagram-1.jpg
+- instagram-2.jpg
+- instagram-3.jpg
+- instagram-4.jpg
+
+Instagram configurado:
+https://www.instagram.com/westonespedrarias/

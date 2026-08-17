@@ -1,0 +1,1193 @@
+/* =========================================
+   WE STONES PEDRARIAS
+   DESIGN SYSTEM
+========================================= */
+
+:root {
+
+    --marfim: #fbf3e8;
+    --marfim-claro: #fffaf3;
+
+    --preto: #090806;
+    --grafite: #211f1b;
+
+    --dourado: #bc7311;
+    --dourado-escuro: #8e570e;
+
+    --areia: #e9ddcf;
+    --areia-clara: #f1e8dc;
+
+    --branco: #fffefd;
+
+    --cinza: #746f68;
+
+    --fonte-display:
+        "Bodoni Moda",
+        Georgia,
+        serif;
+
+    --fonte-texto:
+        "Manrope",
+        Arial,
+        sans-serif;
+
+    --largura: 1280px;
+
+    --borda:
+        1px solid
+        rgba(9, 8, 6, 0.14);
+
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    background: var(--marfim);
+
+    color: var(--preto);
+
+    font-family: var(--fonte-texto);
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+button,
+input {
+    font: inherit;
+}
+
+
+.container {
+    width: min(
+        var(--largura),
+        calc(100% - 80px)
+    );
+
+    margin-inline: auto;
+}
+
+
+/* =========================================
+   ELEMENTOS
+========================================= */
+
+.eyebrow {
+    display: block;
+    margin-bottom: 22px;
+    color: var(--dourado);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+
+.link-seta {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid currentColor;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: gap 250ms ease, color 250ms ease;
+}
+
+
+.link-seta:hover {
+    gap: 38px;
+    color: var(--dourado);
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.topo {
+    position: relative;
+    z-index: 100;
+    background: var(--marfim);
+}
+
+
+.topo-container {
+    width: min(1440px, calc(100% - 70px));
+    min-height: 105px;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 230px 1fr 230px;
+    align-items: center;
+    border-bottom: var(--borda);
+}
+
+
+.marca {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 7px;
+    width: max-content;
+    font-family: var(--fonte-display);
+    line-height: 1;
+}
+
+
+.marca-we {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+
+.marca-stones {
+    font-size: 0.9rem;
+    letter-spacing: 0.22em;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(25px, 3vw, 50px);
+}
+
+
+.menu a,
+.instagram-topo {
+    position: relative;
+    font-size: 0.69rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+
+.menu a::after,
+.instagram-topo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 1px;
+    background: var(--preto);
+    transition: width 220ms ease;
+}
+
+
+.menu a:hover::after,
+.instagram-topo:hover::after {
+    width: 100%;
+}
+
+
+.instagram-topo {
+    justify-self: end;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: calc(100vh - 105px);
+    display: flex;
+    align-items: stretch;
+}
+
+
+.hero-container {
+    width: min(1440px, calc(100% - 70px));
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(380px, 0.8fr) minmax(500px, 1.2fr);
+}
+
+
+.hero-copy {
+    padding: clamp(80px, 9vw, 150px) clamp(40px, 6vw, 95px) 90px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hero-copy h1 {
+    max-width: 670px;
+    margin-bottom: 35px;
+    font-family: var(--fonte-display);
+    font-size: clamp(4.5rem, 7vw, 8rem);
+    font-weight: 400;
+    line-height: 0.87;
+    letter-spacing: -0.055em;
+}
+
+
+.hero-copy h1 span {
+    display: block;
+}
+
+
+.hero-copy p {
+    max-width: 470px;
+    margin-bottom: 45px;
+    color: var(--cinza);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.75;
+}
+
+
+.hero-copy .link-seta {
+    align-self: flex-start;
+}
+
+
+.hero-imagem {
+    position: relative;
+    min-height: 720px;
+    overflow: hidden;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.18)),
+        url("hero-westones.jpg") center / cover no-repeat,
+        linear-gradient(135deg, #ddcdbb, #f8eee2);
+}
+
+
+.hero-numero {
+    position: absolute;
+    top: 32px;
+    right: 35px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+}
+
+
+.hero-legenda {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: 42px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    color: var(--branco);
+}
+
+
+.hero-legenda span {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+
+.hero-legenda strong {
+    max-width: 260px;
+    font-family: var(--fonte-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.15;
+    text-align: right;
+}
+
+
+/* =========================================
+   FRASE EDITORIAL
+========================================= */
+
+.frase-editorial {
+    padding: clamp(90px, 12vw, 180px) 0;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+
+.frase-container {
+    width: min(1100px, calc(100% - 80px));
+    margin-inline: auto;
+    text-align: center;
+}
+
+
+.frase-simbolo {
+    display: block;
+    margin-bottom: 30px;
+    color: var(--dourado);
+    font-size: 2rem;
+}
+
+
+.frase-editorial p {
+    margin: 0;
+    font-family: var(--fonte-display);
+    font-size: clamp(3.8rem, 7.5vw, 8.5rem);
+    font-weight: 400;
+    line-height: 0.96;
+    letter-spacing: -0.05em;
+}
+
+
+.frase-editorial strong {
+    display: block;
+    color: var(--dourado);
+    font-weight: 400;
+}
+
+
+/* =========================================
+   CATEGORIAS
+========================================= */
+
+.categorias {
+    padding: clamp(100px, 12vw, 170px) 0;
+    background: var(--marfim);
+}
+
+
+.secao-topo {
+    max-width: 680px;
+    margin-bottom: clamp(70px, 8vw, 115px);
+}
+
+
+.secao-topo h2 {
+    margin-bottom: 20px;
+    font-family: var(--fonte-display);
+    font-size: clamp(4rem, 6vw, 7rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+}
+
+
+.secao-topo p {
+    max-width: 490px;
+    color: var(--cinza);
+    font-size: 1.05rem;
+}
+
+
+.categorias-lista {
+    border-top: var(--borda);
+}
+
+
+.categoria-item {
+    min-height: 125px;
+    display: grid;
+    grid-template-columns: 80px minmax(250px, 1fr) minmax(180px, 0.6fr) 50px;
+    align-items: center;
+    gap: 25px;
+    border-bottom: var(--borda);
+    transition: padding 260ms ease, background 260ms ease, color 260ms ease;
+}
+
+
+.categoria-item:hover {
+    padding-inline: 25px;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+
+.categoria-numero {
+    color: var(--dourado);
+    font-size: 0.69rem;
+    letter-spacing: 0.15em;
+}
+
+
+.categoria-item h3 {
+    margin: 0;
+    font-family: var(--fonte-display);
+    font-size: clamp(2.4rem, 4vw, 4.6rem);
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+.categoria-detalhe {
+    color: var(--cinza);
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+
+.categoria-item:hover .categoria-detalhe {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.categoria-seta {
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+
+/* =========================================
+   COLEÇÃO
+========================================= */
+
+.colecao {
+    padding: clamp(100px, 11vw, 160px) 0;
+    background: var(--marfim-claro);
+}
+
+
+.colecao-cabecalho {
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(250px, 420px);
+    align-items: end;
+    gap: 60px;
+}
+
+
+.colecao-cabecalho h2 {
+    margin: 0;
+    font-family: var(--fonte-display);
+    font-size: clamp(4rem, 6vw, 7rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+}
+
+
+.colecao-cabecalho > p {
+    margin: 0;
+    color: var(--cinza);
+}
+
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(20px, 2.5vw, 38px);
+}
+
+
+.produto-imagem {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    display: block;
+    overflow: hidden;
+    background-color: var(--areia-clara);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-size 500ms ease;
+}
+
+
+.produto-gota {
+    background-image: url("produto-gota.jpg");
+}
+
+
+.produto-navete {
+    background-image: url("produto-navete.jpg");
+}
+
+
+.produto-redondo {
+    background-image: url("produto-strass.jpg");
+}
+
+
+.produto-imagem:hover {
+    background-size: 105%;
+}
+
+
+.produto-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 13px;
+    background: var(--marfim);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+.produto-info {
+    padding: 22px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+
+.produto-tipo {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--dourado);
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+
+.produto-info h3 {
+    margin: 0;
+    font-family: var(--fonte-display);
+    font-size: clamp(1.7rem, 2.2vw, 2.5rem);
+    font-weight: 400;
+}
+
+
+.produto-info > a {
+    padding-bottom: 3px;
+    border-bottom: 1px solid currentColor;
+    font-size: 0.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   EDITORIAL
+========================================= */
+
+.editorial {
+    padding: 0;
+    background: var(--preto);
+}
+
+
+.editorial-imagem {
+    min-height: 820px;
+    display: flex;
+    align-items: flex-end;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.06)),
+        url("editorial-westones.jpg") center / cover no-repeat,
+        #332d28;
+}
+
+
+.editorial-conteudo {
+    width: min(var(--largura), calc(100% - 80px));
+    margin-inline: auto;
+    padding-bottom: clamp(70px, 9vw, 125px);
+    color: var(--branco);
+}
+
+
+.editorial-conteudo > span {
+    display: block;
+    margin-bottom: 25px;
+    color: #e5bd7d;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+
+.editorial-conteudo h2 {
+    max-width: 850px;
+    margin: 0;
+    font-family: var(--fonte-display);
+    font-size: clamp(4.2rem, 7vw, 8rem);
+    font-weight: 400;
+    line-height: 0.91;
+    letter-spacing: -0.05em;
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.sobre {
+    padding: clamp(110px, 13vw, 190px) 0;
+    background: var(--marfim);
+}
+
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: minmax(340px, 0.9fr) minmax(420px, 1.1fr);
+    align-items: center;
+    gap: clamp(70px, 11vw, 160px);
+}
+
+
+.sobre-marca {
+    min-height: 620px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--marfim-claro);
+    border: var(--borda);
+}
+
+
+.sobre-marca img {
+    width: min(440px, 100%);
+    mix-blend-mode: multiply;
+}
+
+
+.sobre-conteudo {
+    max-width: 630px;
+}
+
+
+.sobre-conteudo h2 {
+    margin-bottom: 35px;
+    font-family: var(--fonte-display);
+    font-size: clamp(4rem, 6.5vw, 7rem);
+    font-weight: 400;
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+}
+
+
+.sobre-conteudo p {
+    max-width: 540px;
+    color: var(--cinza);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+.sobre-conteudo p + p {
+    margin-top: 20px;
+}
+
+
+.sobre-conteudo .link-seta {
+    margin-top: 28px;
+}
+
+
+/* =========================================
+   INSTAGRAM
+========================================= */
+
+.instagram {
+    padding: clamp(100px, 11vw, 160px) 0;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+
+.instagram .eyebrow {
+    color: #d59a49;
+}
+
+
+.instagram-cabecalho {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.instagram-cabecalho h2 {
+    margin: 0;
+    font-family: var(--fonte-display);
+    font-size: clamp(3.2rem, 5.5vw, 6.2rem);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.05em;
+}
+
+
+.instagram-cabecalho > a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+
+.instagram-foto {
+    aspect-ratio: 1 / 1.18;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 300ms ease;
+}
+
+
+.instagram-foto:hover {
+    opacity: 0.76;
+}
+
+
+.instagram-1 {
+    background-image: url("instagram-1.jpg");
+}
+
+
+.instagram-2 {
+    background-image: url("instagram-2.jpg");
+}
+
+
+.instagram-3 {
+    background-image: url("instagram-3.jpg");
+}
+
+
+.instagram-4 {
+    background-image: url("instagram-4.jpg");
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.contato {
+    padding: clamp(110px, 13vw, 190px) 0;
+    background: var(--dourado);
+    color: var(--preto);
+}
+
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: minmax(150px, 0.3fr) minmax(400px, 1fr);
+    gap: 70px;
+}
+
+
+.contato-numero {
+    padding-top: 12px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+}
+
+
+.contato-conteudo {
+    max-width: 880px;
+}
+
+
+.contato .eyebrow {
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+.contato h2 {
+    max-width: 900px;
+    margin-bottom: 35px;
+    font-family: var(--fonte-display);
+    font-size: clamp(4.5rem, 7.5vw, 9rem);
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: -0.06em;
+}
+
+
+.contato p {
+    max-width: 510px;
+    margin-bottom: 40px;
+    font-size: 1.05rem;
+}
+
+
+.botao-claro {
+    min-height: 54px;
+    padding: 0 27px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--preto);
+    color: var(--branco);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    transition: background 230ms ease, color 230ms ease;
+}
+
+
+.botao-claro:hover {
+    background: var(--marfim);
+    color: var(--preto);
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.rodape {
+    padding: 90px 0 35px;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+
+.rodape-principal {
+    padding-bottom: 90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+
+.rodape-logo {
+    font-family: var(--fonte-display);
+    font-weight: 400;
+    line-height: 0.72;
+    letter-spacing: -0.06em;
+}
+
+
+.rodape-logo span {
+    display: block;
+    font-size: clamp(6rem, 13vw, 12rem);
+}
+
+
+.rodape-logo span:last-child {
+    margin-left: 70px;
+}
+
+
+.rodape-links {
+    padding-bottom: 10px;
+    display: grid;
+    gap: 14px;
+}
+
+
+.rodape-links a {
+    width: max-content;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 200ms ease;
+}
+
+
+.rodape-links a:hover {
+    color: var(--dourado);
+}
+
+
+.rodape-final {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+
+.rodape-final p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .topo-container {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .menu {
+        gap: 22px;
+    }
+
+    .hero-container {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(4rem, 7vw, 6rem);
+    }
+
+    .categoria-item {
+        grid-template-columns: 55px 1fr 150px 40px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    .topo-container {
+        width: calc(100% - 40px);
+        min-height: 85px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .instagram-topo {
+        font-size: 0.63rem;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-copy {
+        width: calc(100% - 40px);
+        margin-inline: auto;
+        padding: 90px 0 70px;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(4.2rem, 16vw, 7rem);
+    }
+
+    .hero-imagem {
+        min-height: 620px;
+    }
+
+    .colecao-cabecalho {
+        grid-template-columns: 1fr;
+    }
+
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .produto:last-child {
+        grid-column: span 2;
+        width: 50%;
+    }
+
+    .sobre-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-marca {
+        min-height: 500px;
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contato-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-numero {
+        padding-top: 0;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .topo-container {
+        min-height: 76px;
+    }
+
+    .marca-we {
+        font-size: 1.6rem;
+    }
+
+    .marca-stones {
+        font-size: 0.72rem;
+    }
+
+    .hero-copy {
+        padding-top: 70px;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(3.8rem, 18vw, 5.8rem);
+    }
+
+    .hero-imagem {
+        min-height: 500px;
+    }
+
+    .hero-legenda {
+        left: 22px;
+        right: 22px;
+        bottom: 25px;
+        display: block;
+    }
+
+    .hero-legenda strong {
+        display: block;
+        margin-top: 8px;
+        text-align: left;
+    }
+
+    .frase-container {
+        width: calc(100% - 40px);
+    }
+
+    .frase-editorial p {
+        font-size: clamp(3.3rem, 16vw, 5.8rem);
+    }
+
+    .categorias {
+        padding: 90px 0;
+    }
+
+    .categoria-item {
+        min-height: 110px;
+        grid-template-columns: 38px 1fr 30px;
+        gap: 12px;
+    }
+
+    .categoria-detalhe {
+        display: none;
+    }
+
+    .categoria-item h3 {
+        font-size: clamp(2.1rem, 11vw, 3.4rem);
+    }
+
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .produto:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .editorial-imagem {
+        min-height: 620px;
+    }
+
+    .editorial-conteudo {
+        width: calc(100% - 40px);
+    }
+
+    .sobre-marca {
+        min-height: 390px;
+        padding: 30px;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: clamp(3.6rem, 15vw, 5.5rem);
+    }
+
+    .instagram-cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .instagram-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+
+    .contato h2 {
+        font-size: clamp(4rem, 17vw, 6rem);
+    }
+
+    .rodape-principal {
+        padding-bottom: 60px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .rodape-logo span {
+        font-size: clamp(5rem, 24vw, 8rem);
+    }
+
+    .rodape-logo span:last-child {
+        margin-left: 28px;
+    }
+
+    .rodape-final {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+}
