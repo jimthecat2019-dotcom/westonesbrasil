@@ -1,24 +1,16 @@
-WE STONES PEDRARIAS — PACOTE COM NOVAS IMAGENS
+WESTONES PEDRARIAS — SITE CORRIGIDO
+
+Ajustes principais:
+- marca corrigida de “We Stones” para “Westones” em todo o site;
+- novo logo em SVG, mais nítido, mais escuro e sem área vazia excessiva;
+- logo ampliado no cabeçalho e no rodapé;
+- menu e textos pequenos aumentados;
+- hero reorganizado: uma foto principal + duas fotos equilibradas na lateral;
+- versão responsiva mantida para celular e tablet.
 
 Arquivos principais:
 - index.html
 - style.css
-- logo-westones.png
+- logo-westones.svg
 
-Novas imagens:
-- cristais-champagne-fundo-preto.webp
-- pedrarias-bicolores-gotas.webp
-- cristais-geometricos-com-strass.webp
-- cristais-roxos-geometricos.webp
-- cristais-azuis-natureza.webp
-- cristais-furta-cor-mix.webp
-- mix-pedrarias-coloridas.webp
-- cristais-coracao-swarovski.webp
-
-As imagens foram convertidas para WebP em alta qualidade para deixar o site mais leve.
-O index.html e o style.css já apontam para esses nomes.
-
-Para atualizar no GitHub:
-1. Envie todos os arquivos deste pacote para a mesma pasta do site.
-2. Substitua o index.html e o style.css atuais.
-3. Mantenha os nomes exatamente como estão.
+Mantenha todos os arquivos deste pacote na mesma pasta do site.

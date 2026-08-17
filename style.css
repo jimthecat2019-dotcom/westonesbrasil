@@ -835,3 +835,206 @@ figure {
     object-position: 50% 50%;
   }
 }
+
+/* =========================================
+   AJUSTES WESTONES — 16/08/2026
+   Logo mais presente, tipografia legível e
+   distribuição editorial das fotos do hero.
+========================================= */
+
+body {
+  font-size: 17px;
+}
+
+.microtitulo {
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+}
+
+.link-sutil {
+  font-size: 0.9rem;
+}
+
+/* Cabeçalho mais forte e proporcional */
+.topo-inner {
+  width: min(1360px, calc(100% - 72px));
+  min-height: 118px;
+  grid-template-columns: 250px 1fr 160px;
+}
+
+.logo-link {
+  width: 220px;
+  line-height: 0;
+}
+
+.logo-link img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: normal;
+}
+
+.menu {
+  gap: 42px;
+}
+
+.menu a,
+.instagram-link {
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.035em;
+}
+
+/* Hero: 1 foto principal + 2 fotos equilibradas na lateral */
+.hero {
+  padding: 72px 0 96px;
+}
+
+.hero-intro {
+  margin-bottom: 58px;
+}
+
+.hero-mosaico {
+  height: 620px;
+  display: grid;
+  grid-template-columns: 1.22fr 0.78fr;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+.hero-mosaico .foto-a {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.hero-mosaico .foto-b {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.hero-mosaico .foto-c {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.foto-a,
+.foto-b,
+.foto-c {
+  height: auto;
+}
+
+.hero-mosaico img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Textos pequenos antes discretos demais */
+.colecao-info span,
+.produto-texto > span {
+  font-size: 0.78rem;
+}
+
+.colecao-info small,
+.produto-texto a,
+.instagram-topo > a,
+.rodape-links a {
+  font-size: 0.84rem;
+}
+
+.produto-texto h3 {
+  font-size: 1.7rem;
+}
+
+.rodape-inner > img {
+  width: 185px;
+  mix-blend-mode: normal;
+}
+
+.rodape p {
+  font-size: 0.78rem;
+}
+
+@media (max-width: 950px) {
+  .topo-inner {
+    grid-template-columns: 205px 1fr auto;
+  }
+
+  .logo-link {
+    width: 185px;
+  }
+
+  .menu {
+    gap: 24px;
+  }
+
+  .menu a,
+  .instagram-link {
+    font-size: 0.82rem;
+  }
+
+  .hero-mosaico {
+    height: 560px;
+    grid-template-columns: 1.12fr 0.88fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .foto-c {
+    display: block;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 16.5px;
+  }
+
+  .topo-inner {
+    min-height: 92px;
+  }
+
+  .logo-link {
+    width: 165px;
+  }
+
+  .instagram-link {
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    padding-top: 54px;
+  }
+
+  .hero-mosaico {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 215px;
+    gap: 12px;
+  }
+
+  .hero-mosaico .foto-a {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .hero-mosaico .foto-b {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .hero-mosaico .foto-c {
+    grid-column: 2;
+    grid-row: 2;
+    display: block;
+  }
+
+  .foto-a,
+  .foto-b,
+  .foto-c {
+    height: auto;
+  }
+
+  .rodape-inner > img {
+    width: 165px;
+  }
+}
